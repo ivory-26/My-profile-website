@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,10 +16,6 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 div#main {
