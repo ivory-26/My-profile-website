@@ -42,10 +42,18 @@ const App = () => {
   return (
     <div id="main">
       <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <section id="home">
+        <Home name={siteProps.name} title={siteProps.title} />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+      <section id="footer">
+        <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      </section>
     </div>
   );
 };
