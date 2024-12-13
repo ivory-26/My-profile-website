@@ -7,9 +7,9 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://ivory-26.github.io/My-profile-website'",
-    "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist"
+    "build-main": "parcel build --public-url 'https://ivory-26.github.io/My-profile-website'",
+    "predeploy": "npm run build-main",
+    "deploy": "cp -r dist/* . && rm -rf dist"
   },
   "repository": {
     "type": "git",
